@@ -25,7 +25,32 @@ public class MainActivity extends AppCompatActivity {
         int num1 = Integer.parseInt(editText1.getText().toString());
         int num2 = Integer.parseInt(editText2.getText().toString());
 
-        textView.setText("Sum = " + (num1 + num2));
+        textView.setText("Result = " + (num1 + num2));
+
+    }
+
+    public void multiply(View view) {
+        EditText editText1 = findViewById(R.id.editText1);
+        EditText editText2 = findViewById(R.id.editText2);
+
+        TextView textView = findViewById(R.id.textView);
+
+        int num1 = Integer.parseInt(editText1.getText().toString());
+        int num2 = Integer.parseInt(editText2.getText().toString());
+
+        textView.setText("Result = " + (num1 * num2));
+    }
+
+    public void divide(View view) {
+        EditText editText1 = findViewById(R.id.editText1);
+        EditText editText2 = findViewById(R.id.editText2);
+
+        TextView textView = findViewById(R.id.textView);
+
+        int num1 = Integer.parseInt(editText1.getText().toString());
+        int num2 = Integer.parseInt(editText2.getText().toString());
+
+        textView.setText("Result = " + (num1 / num2));
 
     }
 }
